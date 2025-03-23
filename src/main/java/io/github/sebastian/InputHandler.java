@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class InputHandler {
     public static ArrayList<Double> getInput(){
         ArrayList<Double> notas = new ArrayList<>();
-        Scanner sc = new Scanner("System.in");
-        System.out.println("Ingrese una por una las notas de su promedio");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese una por una las notas de su promedio, para salir escriba \"fin\" o \"salir\" ");
         while(true){
-            System.out.print("> ");
-            String entrada = sc.nextLine();
+            System.out.print(">");
+            String entrada =  sc.nextLine();
             if (entrada.equalsIgnoreCase("fin") || entrada.equalsIgnoreCase("salir")){
                 break;
             }
