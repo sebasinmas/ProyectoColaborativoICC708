@@ -8,6 +8,6 @@ public class ProcessingHandler {
         for (int i = 0; i < notas.size(); i++) {
             promedio += notas.get(i);
         }
-        return promedio;
+        return promedio/notas.size();
     }
 }
