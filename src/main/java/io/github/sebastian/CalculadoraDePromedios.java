@@ -8,6 +8,7 @@ import java.util.List;
 public class CalculadoraDePromedios {
     public static void main(String[] args) {
         List<Double> notas = InputHandler.getInput();
-
+        double promedio = ProcessingHandler.getPromedio((ArrayList<Double>) notas);
+        OutputHandler.showOutput(promedio);
     }
 }
